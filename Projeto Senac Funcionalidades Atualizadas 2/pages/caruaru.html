@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Caruaru</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <header>
+    <h1 id="mainTitle" onclick="reloadPage()">Discovery PE</h1>
+    <p>Explore Caruaru</p>
+    <div class="banners">
+      <button class="banner" onclick="searchPlaces('restaurantes')">
+        <img src="../images/restaurante_banner.jpg" alt="Restaurantes">
+        <h3>Restaurantes</h3>
+      </button>
+      <button class="banner" onclick="searchPlaces('eventos')">
+        <img src="../images/eventos_banner.jpg" alt="Eventos">
+        <h3>Eventos</h3>
+      </button>
+      <button class="banner" onclick="searchPlaces('pontos_turisticos')">
+        <img src="../images/pontos_turisticos_banner.jpg" alt="Pontos Turísticos">
+        <h3>Pontos Turísticos</h3>
+      </button>
+    </div>
+    <input type="text" id="searchInput" placeholder="Pesquisar por lugar...">
+    <button class="search" onclick="search()">Pesquisar</button>
+    <button class="clear" onclick="clearResults()">Limpar</button>
+  </header>
+
+    <div class="placePage" >
+        <h2>O que fazer em Caruaru?</h2>
+        <img src="../images/feira-de-caruaru.jpg" alt="Escultura de Brennand">
+        <p>Encravada no agreste pernambucano, Caruaru é considerada a capital do forró, mas também pode ser lembrada por ser um grande pólo comercial e considerada pela Unesco (Organização das Nações Unidas para a Educação, a Ciência e a Cultura) como o maior “Centro de Artes Figurativas das Américas”.
+
+            A cidade, que fica a 130 km de Recife, tem a origem de seu nome incerta. Uma das explicações é que o nome Caruaru deriva do dialeto dos índios cariris, que habitavam a região na época da chegada do homem branco, no século 16. “Caru” significa alimento, coisa boa, e “aru aru”, uma repetição que significa abundância. A palavra Caruaru, então, poderia ser traduzida como terra da fartura.
+            
+            Ligada ao comércio desde sua formação, Caruaru procura expandir sua vocação para o turismo. O principal evento é a festa de São João, que deixa o caruaruense orgulhoso em dizer que sua cidade é a capital do forró e que faz o melhor e maior São João do mundo.
+            
+            De fato a festa é grandiosa. Durante os 30 dias do mês de junho, Caruaru recebe cerca de 1,5 milhão de pessoas para a festa popular. O principal arraial, a Vila do Forró, tem um pátio de 41 mil metros quadrados com capacidade para até 80 mil pessoas. Bandas de pífanos, bacamarteiros, sanfoneiros, drilhas e bonecos de barro espalham-se pela cidade.
+            
+            A cada ano Caruaru promete trazer as maiores atrações, como a maior fogueira, o maior cuscuz, a maior pamonha, o maior pé-de-moleque e o maior arroz doce do mundo. É claro que não podemos deixar de falar que a cidade rivaliza com Campina Grande (PB) o status de produzir o maior São João do mundo, mas essa é uma competição saudável, onde quem sai ganhando é o turista, que pode prestigiar sempre uma festa melhor do que a outra.
+            
+            Para que os visitantes possam apreciar a cidade não só na época das festas juninas, Caruaru também está voltando suas atenções para o Carnaval, Semana Santa e Natal, além de investir no esporte, levando disputas automobilísticas ao autódromo Ayrton Senna.</p>
+    </div>
+
+  <script src="../script.js"></script>
+</body>
+</html>

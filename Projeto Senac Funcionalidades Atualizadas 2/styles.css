@@ -125,6 +125,7 @@ body {
     text-transform: capitalize;
     color: black;
     margin-right: 30px;
+    margin-left: 15px;
   }
 
   .results-container {
@@ -166,3 +167,22 @@ body {
     transition: 0.5s;
   }
   
+  .placePage {
+    text-align: center;
+  }
+  .placePage h2{
+    text-align: center;
+    margin-top: 20px;
+  }
+  .placePage p{
+    padding: 0px 50px 0px 50px;
+    font-weight: bold;
+  }
+  .placePage img{
+
+    width: 300px;
+    height: 250px; 
+    object-fit: cover;
+    border-bottom: 1px solid #000000;
+    margin-bottom: 10px;
+  }

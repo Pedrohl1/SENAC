@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Fernando de Noronha</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <header>
+    <h1 id="mainTitle" onclick="reloadPage()">Discovery PE</h1>
+    <p>Explore Fernando de Noronha</p>
+    <div class="banners">
+      <button class="banner" onclick="searchPlaces('restaurantes')">
+        <img src="../images/restaurante_banner.jpg" alt="Restaurantes">
+        <h3>Restaurantes</h3>
+      </button>
+      <button class="banner" onclick="searchPlaces('eventos')">
+        <img src="../images/eventos_banner.jpg" alt="Eventos">
+        <h3>Eventos</h3>
+      </button>
+      <button class="banner" onclick="searchPlaces('pontos_turisticos')">
+        <img src="../images/pontos_turisticos_banner.jpg" alt="Pontos Turísticos">
+        <h3>Pontos Turísticos</h3>
+      </button>
+    </div>
+    <input type="text" id="searchInput" placeholder="Pesquisar por lugar...">
+    <button class="search" onclick="search()">Pesquisar</button>
+    <button class="clear" onclick="clearResults()">Limpar</button>
+  </header>
+
+    <div class="placePage" >
+        <h2>O que fazer em Fernando de Noronha?</h2>
+        <img src="../images/noronha.jpg" alt="Escultura de Brennand">
+        <p>Fernando de Noronha não é só o que aparece no Instagram dos famosos.
+
+            Os melhores momentos do ano para curtir Fernando de Noronha costumam ser escassos de celebridades (veja quando ir a Noronha). Além das pousadas onde ficam os vips, existem outras – que, com algum sacrifício, podem caber em bolsos plebeus (veja onde ficar em Noronha).
+            
+            E por baixo do verniz de point badalado, Fernando de Noronha continua um destino de natureza por excelência: praias selvagens, corais preservados, vida marinha diversa e abundante (veja o que fazer em Fernando de Noronha).
+            
+            A ilha recebe apenas 1.000 forasteiros por dia. Quando você for, aproveite o privilégio pelo máximo de noites que puder.</p>
+    </div>
+
+  <script src="../script.js"></script>
+</body>
+</html>

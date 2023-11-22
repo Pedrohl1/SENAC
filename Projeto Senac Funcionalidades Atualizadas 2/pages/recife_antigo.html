@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Recife Antigo</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <header>
+    <h1 id="mainTitle" onclick="reloadPage()">Discovery PE</h1>
+    <p>Explore Recife Antigo</p>
+    <div class="banners">
+      <button class="banner" onclick="searchPlaces('restaurantes')">
+        <img src="../images/restaurante_banner.jpg" alt="Restaurantes">
+        <h3>Restaurantes</h3>
+      </button>
+      <button class="banner" onclick="searchPlaces('eventos')">
+        <img src="../images/eventos_banner.jpg" alt="Eventos">
+        <h3>Eventos</h3>
+      </button>
+      <button class="banner" onclick="searchPlaces('pontos_turisticos')">
+        <img src="../images/pontos_turisticos_banner.jpg" alt="Pontos Turísticos">
+        <h3>Pontos Turísticos</h3>
+      </button>
+    </div>
+    <input type="text" id="searchInput" placeholder="Pesquisar por lugar...">
+    <button class="search" onclick="search()">Pesquisar</button>
+    <button class="clear" onclick="clearResults()">Limpar</button>
+  </header>
+
+    <div class="placePage" >
+        <h2>O que fazer no Recife Antigo?</h2>
+        <img src="../images/brennand.jpg" alt="Escultura de Brennand">
+        <p>O nome oficial é Bairro do Recife, mas todo mundo chama mesmo é de Recife Antigo – ou, quando começa a intimidade, só “Antigo” mesmo. Charles Darwin, Santos Dumont e Dom Pedro II estão entre os personagens ilustres que já desembarcaram num dos pedaços mais interessantes da capital pernambucana, e você não vai perder a chance de entrar pra essa lista, né? :P Afinal, esse bairro por si só já faz valer no mínimo um dia na cidade antes de você correr pras praias dos arredores. Sei que sou suspeita pra falar, mas pode confiar.
+
+            Além de caminhar sem rumo pelas ruas de paralelepípedos, lembrando sempre de olhar pra cima pra paquerar os prédios históricos, um dia no Recife Antigo inclui um punhado de atrações massa, sem falar nos bons bares e restaurantes.
+            
+            E apesar de ser um dos principais cartões postais recifenses, o bairro não é só pra turista ver: ele também é o maior polo tecnológico e um dos principais centros de lazer e cultura da cidade.</p>
+    </div>
+
+  <script src="../script.js"></script>
+</body>
+</html>

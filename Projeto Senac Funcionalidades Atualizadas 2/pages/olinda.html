@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Olinda</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <header>
+    <h1 id="mainTitle" onclick="reloadPage()">Discovery PE</h1>
+    <p>Explore Olinda</p>
+    <div class="banners">
+      <button class="banner" onclick="searchPlaces('restaurantes')">
+        <img src="../images/restaurante_banner.jpg" alt="Restaurantes">
+        <h3>Restaurantes</h3>
+      </button>
+      <button class="banner" onclick="searchPlaces('eventos')">
+        <img src="../images/eventos_banner.jpg" alt="Eventos">
+        <h3>Eventos</h3>
+      </button>
+      <button class="banner" onclick="searchPlaces('pontos_turisticos')">
+        <img src="../images/pontos_turisticos_banner.jpg" alt="Pontos Turísticos">
+        <h3>Pontos Turísticos</h3>
+      </button>
+    </div>
+    <input type="text" id="searchInput" placeholder="Pesquisar por lugar...">
+    <button class="search" onclick="search()">Pesquisar</button>
+    <button class="clear" onclick="clearResults()">Limpar</button>
+  </header>
+
+    <div class="placePage" >
+        <h2>O que fazer em Olinda?</h2>
+        <img src="../images/olinda1.jpeg" alt="Escultura de Brennand">
+        <p>Olinda fica grudada à Recife, conhecida por suas ladeiras e seu centro histórico, além de um dos carnavais mais famosos do país.
+
+
+            Olinda tornou-se uma das mais bem preservadas cidades coloniais do Brasil. Possui várias igrejas barrocas e outras riquezas católicas e uma arquitetura rústica e muito colorida. Foi a segunda cidade brasileira a ser declarada Patrimônio Histórico e Cultural da Humanidade pela ONU, em 1982.
+            
+            O famoso Carnaval de Olinda é embalado ao som do frevo, maracatu e outros ritmos de Pernambuco. Bonecos gigantes caracterizados desfilam pelas ladeiras da cidade levando junto com eles, os vários blocos carnavalescos que fazem a alegria da população.
+            
+            Quem viaja à Recife, aproveita para conhecer o centro histórico de Olinda, repleto de ladeiras, construções antigas, igrejas e museus.
+            Além da parte histórica há outros atrativos, como o Mirante do Alto da Sé e as praias de Olinda, com destaque para a Praia de Bairro Novo.</p>
+    </div>
+
+  <script src="../script.js"></script>
+</body>
+</html>

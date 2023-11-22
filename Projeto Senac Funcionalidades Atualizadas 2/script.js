@@ -1,47 +1,93 @@
 const placesDatabase = [
-    { name: "Recife Antigo", image: "recife_antigo.jpg", category: 'pontos_turisticos' },
-    { name: "Olinda", image: "olinda.jpg", category: 'pontos_turisticos' },
-    { name: "Porto de Galinhas", image: "porto_de_galinhas.jpg", category: 'pontos_turisticos' },
-    { name: "Fernando de Noronha", image: "fernando_de_noronha.jpg", category: 'pontos_turisticos' },
-    { name: "Caruaru", image: "caruaru.jpg", category: 'pontos_turisticos' },
-    { name: "Azulejo", image: "restaurante1.jpg", category: 'restaurantes' },
-    { name: "Pernambuco Dream Bar ", image: "restaurante2.jpg", category: 'restaurantes' },
-    { name: "PE Bar e Restaurante", image: "restaurante3.jpg", category: 'restaurantes' },
-    { name: "Festa de São João ", image: "evento1.jpg", category: 'eventos' },
-    { name: "Miss Pernambuco", image: "evento2.jpg", category: 'eventos' },
-    { name: "Virada Cultural", image: "evento3.jpg", category: 'eventos' }
-    // Adicione mais locais com suas categorias aqui...
-  ];
-  
-  function displayPlacesByCategory(category) {
-    const resultsDiv = document.getElementById('results');
-    resultsDiv.innerHTML = '';
-  
-    const places = placesDatabase.filter(place => place.category === category);
-  
-    if (places.length === 0) {
-      resultsDiv.innerHTML = 'Nenhum resultado encontrado.';
-    } else {
-      const ul = document.createElement('ul');
-      places.forEach(place => {
-        const li = document.createElement('li');
-        const img = document.createElement('img');
-        img.src = `images/${place.image}`;
-        img.alt = place.name;
-        li.appendChild(img);
-        li.textContent = place.name;
-        ul.appendChild(li);
-      });
-      resultsDiv.appendChild(ul);
-    }
-  
-    // Ocultar os locais em destaque ao exibir os resultados da categoria selecionada
-    const initialPlacesDiv = document.getElementById('initialPlaces');
-    initialPlacesDiv.style.display = 'none';
+  {
+      name: "Recife Antigo",
+      image: "recife_antigo.jpg",
+      category: 'pontos_turisticos',
+      url:'./pages/recife_antigo.html'
+  },
+  {
+      name: "Olinda",
+      image: "olinda.jpg",
+      category: 'pontos_turisticos',
+      url:'./pages/olinda.html'
+  },
+  {
+      name: "Porto de Galinhas",
+      image: "porto_de_galinhas.jpg",
+      category: 'pontos_turisticos',
+      url:'./pages/porto_de_galinhas.html'
+  },
+  {
+      name: "Fernando de Noronha",
+      image: "fernando_de_noronha.jpg",
+      category: 'pontos_turisticos',
+      url:'./pages/fernando_de_noronha.html'
+  },
+  {
+      name: "Caruaru",
+      image: "caruaru.jpg",
+      category: 'pontos_turisticos',
+      url:'./pages/caruaru.html'
+  },
+  {
+      name: "Azulejo",
+      image: "restaurante1.jpg",
+      category: 'restaurantes'
+  },
+  {
+      name: "Pernambuco Dream Bar ",
+      image: "restaurante2.jpg",
+      category: 'restaurantes'
+  },
+  {
+      name: "PE Bar e Restaurante",
+      image: "restaurante3.jpg",
+      category: 'restaurantes'
+  },
+  {
+      name: "Festa de São João ",
+      image: "evento1.jpg",
+      category: 'eventos'
+  },
+  {
+      name: "Miss Pernambuco",
+      image: "evento2.jpg",
+      category: 'eventos'
+  },
+  {
+      name: "Virada Cultural",
+      image: "evento3.jpg",
+      category: 'eventos'
   }
+  // Adicione mais locais com suas categorias aqui...
+]
+  // function displayPlacesByCategory(category) {
+  //   const resultsDiv = document.getElementById('results');
+  //   resultsDiv.innerHTML = '';
   
- // ... (seu código existente)
-
+  //   const places = placesDatabase.filter(place => place.category === category);
+  
+  //   if (places.length === 0) {
+  //     resultsDiv.innerHTML = 'Nenhum resultado encontrado.';
+  //   } else {
+  //     const ul = document.createElement('ul');
+  //     places.forEach(place => {
+  //       const li = document.createElement('li');
+  //       const img = document.createElement('img');
+  //       img.src = `images/${place.image}`;
+  //       img.alt = place.name;
+  //       li.appendChild(img);
+  //       li.textContent = place.name;
+  //       ul.appendChild(li);
+  //     });
+  //     resultsDiv.appendChild(ul);
+  //   }
+  
+  //   // Ocultar os locais em destaque ao exibir os resultados da categoria selecionada
+  //   const initialPlacesDiv = document.getElementById('initialPlaces');
+  //   initialPlacesDiv.style.display = 'none';
+  // }
+  
 function displayFeaturedPlaces() {
   const featuredPlacesDiv = document.getElementById('featuredPlaces');
   const pointsOfInterest = placesDatabase.filter(place => {
@@ -53,10 +99,13 @@ function displayFeaturedPlaces() {
     const placeDiv = document.createElement('div');
     placeDiv.classList.add('place-item');
 
+    const url = document.createElement('a');
     const img = document.createElement('img');
     img.src = `images/${place.image}`;
     img.alt = place.name;
-    placeDiv.appendChild(img);
+    url.href = place.url;
+    url.appendChild(img)
+    placeDiv.appendChild(url);
 
     const placeName = document.createElement('p');
     placeName.textContent = place.name;
@@ -79,8 +128,6 @@ function displayFeaturedPlaces() {
     featuredPlacesDiv.appendChild(placeDiv);
   });
 }
-
-// ... (seu código existente)
 
   
   function search() {
@@ -108,11 +155,13 @@ function displayFeaturedPlaces() {
     } else {
       results.forEach(result => {
         const div = document.createElement('div');
-  
+        const url = document.createElement('a');
         const img = document.createElement('img');
+        url.href = result.url;
         img.src = `images/${result.image}`;
         img.alt = result.name;
-        div.appendChild(img);
+        url.appendChild(img);
+        div.appendChild(url);
   
         const placeName = document.createElement('p');
         placeName.innerHTML = `<strong>${result.name}</strong>`;
@@ -164,5 +213,17 @@ function displayFeaturedPlaces() {
   };
 
   function reloadPage() {
-    location.reload();
+    location.replace('/Projeto Senac Funcionalidades Atualizadas 2/index.html');
+  }
+
+  function homePage(){
+    location.replace('/Projeto Senac Funcionalidades Atualizadas 2/home.html');
+  }
+
+  function loadPagePlaceItem(){
+    var places = document.getElementById('featuredPlaces').querySelectorAll('p');
+    console.log(places);
+    for(i=0;i<places.length();i++){
+
+    }
   }

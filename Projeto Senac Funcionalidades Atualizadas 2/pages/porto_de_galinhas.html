@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Porto de galinhas</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <header>
+    <h1 id="mainTitle" onclick="reloadPage()">Discovery PE</h1>
+    <p>Explore Porto de galinhas</p>
+    <div class="banners">
+      <button class="banner" onclick="searchPlaces('restaurantes')">
+        <img src="../images/restaurante_banner.jpg" alt="Restaurantes">
+        <h3>Restaurantes</h3>
+      </button>
+      <button class="banner" onclick="searchPlaces('eventos')">
+        <img src="../images/eventos_banner.jpg" alt="Eventos">
+        <h3>Eventos</h3>
+      </button>
+      <button class="banner" onclick="searchPlaces('pontos_turisticos')">
+        <img src="../images/pontos_turisticos_banner.jpg" alt="Pontos Turísticos">
+        <h3>Pontos Turísticos</h3>
+      </button>
+    </div>
+    <input type="text" id="searchInput" placeholder="Pesquisar por lugar...">
+    <button class="search" onclick="search()">Pesquisar</button>
+    <button class="clear" onclick="clearResults()">Limpar</button>
+  </header>
+
+    <div class="placePage" >
+        <h2>O que fazer em Porto de galinhas?</h2>
+        <img src="../images/porto-de-galinhas-piscinas-naturais.jpg" alt="Escultura de Brennand">
+        <p>Porto de Galinhas já foi eleita algumas vezes por sites e revistas como a melhor praia do Brasil. Se é a melhor, talvez! Difícil competir com Fernando de Noronha.
+
+
+            Mas, sem dúvida, Porto de Galinhas é um dos principais destinos turísticos do Brasil, localizado em uma das partes mais belas da costa brasileira.
+            
+            A região é muito famosa pela grande quantidade de recifes que se encontram próximos à beira da praia. Com isso, formam-se belíssimas piscinas naturais de águas transparentes.
+            
+            A paisagem se completa com o mar de cor verde-esmeralda, a areia branca da praia e a orla repleta de grandes coqueiros.
+            
+            Neste post iremos mostrar o que fazer em Porto de Galinhas, quando ir, onde ficar, praias e passeios.</p>
+    </div>
+
+  <script src="../script.js"></script>
+</body>
+</html>
