@@ -1,0 +1,63 @@
+[
+    {
+      "name": "Recife Antigo",
+      "image": "recife_antigo.jpg",
+      "category": "pontos_turisticos",
+      "url": "./pages/recife_antigo.html"
+    },
+    {
+      "name": "Olinda",
+      "image": "olinda.jpg",
+      "category": "pontos_turisticos",
+      "url": "./pages/olinda.html"
+    },
+    {
+      "name": "Porto de Galinhas",
+      "image": "porto_de_galinhas.jpg",
+      "category": "pontos_turisticos",
+      "url": "./pages/porto_de_galinhas.html"
+    },
+    {
+      "name": "Fernando de Noronha",
+      "image": "fernando_de_noronha.jpg",
+      "category": "pontos_turisticos",
+      "url": "./pages/fernando_de_noronha.html"
+    },
+    {
+      "name": "Caruaru",
+      "image": "caruaru.jpg",
+      "category": "pontos_turisticos",
+      "url": "./pages/caruaru.html"
+    },
+    {
+      "name": "Azulejo",
+      "image": "restaurante1.jpg",
+      "category": "restaurantes"
+    },
+    {
+      "name": "Pernambuco Dream Bar ",
+      "image": "restaurante2.jpg",
+      "category": "restaurantes"
+    },
+    {
+      "name": "PE Bar e Restaurante",
+      "image": "restaurante3.jpg",
+      "category": "restaurantes"
+    },
+    {
+      "name": "Festa de São João ",
+      "image": "evento1.jpg",
+      "category": "eventos"
+    },
+    {
+      "name": "Miss Pernambuco",
+      "image": "evento2.jpg",
+      "category": "eventos"
+    },
+    {
+      "name": "Virada Cultural",
+      "image": "evento3.jpg",
+      "category": "eventos"
+    }
+  ]
+  
